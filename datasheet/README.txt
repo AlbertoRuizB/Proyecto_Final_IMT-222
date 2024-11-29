@@ -23,4 +23,4 @@ Aplicaciones Típicas: Ejemplos de cómo usar el componente en proyectos reales.
 
 Los datasheets son herramientas esenciales para cualquier proyecto de Arduino, ya que proporcionan toda la información necesaria para el uso seguro y 
 eficiente de componentes electrónicos. Al utilizar datasheets, los desarrolladores pueden asegurar la correcta implementación y funcionalidad de sus proyectos, 
-evitando errores y optimizando el rendimiento.
+evitando errores y optimizando el rendimiento..
