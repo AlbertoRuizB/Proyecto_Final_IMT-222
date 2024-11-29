@@ -11,4 +11,3 @@ Servomotor: Controla el mecanismo de bloqueo de la caja fuerte. Cuando la contra
 Sensor de Huella Digital: Añade una capa adicional de seguridad. Permite el acceso solo a usuarios con huellas digitales autorizadas. El Arduino verifica las huellas digitales almacenadas y autoriza o deniega el acceso.
 
 Buzzer (opcional): Emite sonidos para indicar diversas acciones como la entrada incorrecta de contraseña o intentos de acceso no autorizados. Sirve como una alerta audible.
-.
