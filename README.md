@@ -1,14 +1,33 @@
-Materia: Sistemas Embebidos IMT-122 
+# TÍTULO: 🔒 Sistema de Seguridad de una Caja Fuerte
 
-Nombres de Integrantes: Carlos Alberto ruiz Balderrama 
+# 👨‍💻AUTORES: 
+# AUTOR_1.- Ramiro Caucota
+# AUTOR_2.- Alberto Ruiz
 
-Tema de Proyecto: Caja Fuerte 
+# 📑 Índice
+# 1. Introducción
+# 2. Características y materiales
+# 3. Tecnología Empleada
+# 4. Licencia
 
-- Introducción: 
-Una caja fuerte controlada por Arduino es un sistema embebido diseñado para proporcionar seguridad adicional a objetos valiosos mediante la implementación de un microcontrolador Arduino. 
-Este proyecto consiste en la construcción de una caja fuerte que utiliza un teclado numérico para la entrada de una contraseña y un servomotor para accionar el mecanismo de bloqueo.
-Este proyecto de caja fuerte con Arduino no solo mejora la seguridad personal, sino que también ofrece una plataforma para experimentar y aprender sobre la integración de hardware y software en sistemas embebidos. 
+# 1. INTRODUCCIÓN:
+# 🎯 Proyecto: Sistema de Seguridad de una Caja Fuerte
+# Este proyecto es un sistema inteligente diseñado para proteger tus objetos de valor mediante un software de seguridad altamente eficiente y personalizable. Combina tecnología avanzada de autenticación con algoritmos robustos de encriptación, asegurando que solo usuarios autorizados puedan acceder al contenido de la caja fuerte. La solución está orientada a individuos y organizaciones que buscan una capa adicional de protección en sus cajas fuertes físicas mediante una interfaz digital segura. Su implementación es ideal para cajas fuertes en hogares, oficinas o instituciones financieras, ofreciendo monitoreo en tiempo real, alertas y registro de actividades.
 
-- Objetivo: 
-Realizar una caja fuerte con Arduino IDE en la materia de Sistemas Embebidos tiene un propósito educativo fundamental. Los estudiantes aprenden a integrar hardware y software en un sistema funcional, el proyecto enseña principios de programación, electrónica y diseño de sistemas embebidos, habilidades cruciales en la ingeniería moderna.
+# 2. 📋 CARACTERISTICAS y MATERIALES
+  # - Teclado Matricial 
+  # - Pantalla LCD 16x2
+  # - Servomotor
+  # - Sensor de Huella HC-SR04
+  # - ESP32
+  # - Acero Negro
+  # - Fuente de Alimentación
+
+# 3. 🚀 TECNOLOGIA EMPLEADA
+# El ESP32 es un chip System on Chip (SoC) que se puede programar en varios lenguajes, entre ellos:     
+# C/C++, Python, JavaScript, LUA, Arduino, MicroPython, Scratch. 
+# El ESP32 es un chip de bajo costo y consumo de energía, con tecnología Wi-Fi y Bluetooth integrada. Fue creado por Espressif Systems y fabricado por TSMC.
+
+# 4. 🤝LICENCIA
+# Este proyecto está bajo la Licencia MIT. 
 
