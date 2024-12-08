@@ -1,46 +1,25 @@
-#include <Keypad.h>
-#include <LiquidCrystal_I2C.h>
-#include <ESP32Servo.h>
-#include <EEPROM.h>
+// SistemaCaja.cpp
 
-// Configuración del teclado matricial
-#define ROWS 4          // Número de filas del teclado
-#define COLS 4          // Número de columnas del teclado
-#define EEPROM_SIZE 512 // Tamaño de la EEPROM
-#define SERVO_PIN 13    // Pin del servomotor
-#define EEPROM_START_ADDR 0 // Dirección inicial en EEPROM para guardar la clave
-#define SERVO_OPEN_ANGLE 90 // Ángulo del servomotor para abrir la caja
-#define SERVO_CLOSED_ANGLE 0 // Ángulo del servomotor para cerrar la caja
-#define MAX_INTENTOS 3  // Máximo número de intentos fallidos
-#define BLOQUEO_MS 10000 // Tiempo de bloqueo en milisegundos (10 segundos)
+#include "SistemaCaja.h"
 
+// Definiciones de las variables globales
 const char keys[ROWS][COLS] = {
     {'1', '2', '3', 'A'},
     {'4', '5', '6', 'B'},
     {'7', '8', '9', 'C'},
     {'*', '0', '#', 'D'}
 };
- byte rowPins[ROWS] = {25, 26, 27, 14}; // Pines para las filas
- byte colPins[COLS] = {16, 17, 18, 19}; // Pines para las columnas
+byte rowPins[ROWS] = {25, 26, 27, 14}; // Pines para las filas
+byte colPins[COLS] = {16, 17, 18, 19}; // Pines para las columnas
 
-// Inicialización de objetos
 Keypad keypad = Keypad(makeKeymap(keys), rowPins, colPins, ROWS, COLS);
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 Servo servo;
 
 // Variables de estado
-bool cajaAbierta = false;     // Estado de la caja: abierta o cerrada
-int intentosFallidos = 0;     // Contador de intentos fallidos
+bool cajaAbierta = false;
+int intentosFallidos = 0;
 
-void setup() {
-  inicializarSistema();
-}
-
-void loop() {
-  gestionarMenu();
-}
-
-// -------------------- Funciones Principales --------------------
 void inicializarSistema() {
   // Configurar Serial, LCD, EEPROM y servomotor
   Serial.begin(115200);
@@ -130,7 +109,6 @@ void cerrarCaja() {
   mostrarOpcionesIniciales();
 }
 
-// -------------------- Funciones Auxiliares --------------------
 void abrirCaja() {
   servo.write(SERVO_OPEN_ANGLE);
   cajaAbierta = true;
